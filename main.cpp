@@ -27,7 +27,7 @@ int main() {
     // Get final time (ft)
     const float ft = final_time(l1, l2);
 
-    const int time_mins = floorf(ft * 60.0f);
+    const int time_mins = roundf(ft * 60.0f);
     int hours = time_mins / 60;
     int mins = time_mins % 60;
 
